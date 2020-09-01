@@ -1,0 +1,12 @@
+Patrascoiu Ion-Radu, 322 CD
+
+	In implementarea problemei am folosit o parcurgere recursiva pentru a
+traversa arborele in preordine. Valoarea fiecarui nod, o convertesc in int, cu
+exceptia operatorilor, prin intermediul functiei "my_atoi", o salvez intr-un
+array, asfel acesta va contine inputul initial. Dupa crearea array-ului, il
+voi parcurge invers, voi adauga cate un element in stiva, verificand daca
+este sau nu operator. In caz afirmativ, am garantia, datorita parcurgerii
+in sens invers, ca in stiva mai sunt cel putin doua numere. Dau 3 pop-uri,
+efectuez operatia specifica, dau push la rezultatul operatiei si revin in
+parcurgerea arary-ului. Procesul se repeta pana cand nu mai sunt elemente
+in array. La sfarsit se afiseaza calculul final, stocat in "result".
